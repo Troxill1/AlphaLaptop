@@ -1,0 +1,142 @@
+main {
+    margin-top: 100px;
+}
+
+#filters-h2 {
+    position: absolute;
+    margin: 0 0 0 170px;
+}
+
+aside {
+    position: absolute;
+    z-index: 1;
+    margin-top: 70px;
+    height: 30px;
+    overflow: hidden;
+    padding: 20px;
+    color: #fff;
+    background-color: #04AA6D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+}
+
+aside:hover {
+    height: 280px;
+}
+
+.wrapper {
+    margin-top: 50px;
+    width: 400px;
+    padding: 0 25px;
+}
+
+.wrapper button {
+    float: right;
+    margin: 30px 0 10px;
+    height: 50px;
+    width: 110px;
+    border: none;
+    border-radius: 3px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15), 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+    transition: all 0.3s;
+}
+
+.wrapper button:hover {
+    margin: 25px -5px 10px;
+    height: 55px;
+    width: 120px;
+}
+
+.price-input { 
+    display: flex;
+    margin: 30px 0 35px;
+    width: 100%;
+}
+
+.price-input .field {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 45px;
+}
+
+.field input {
+    text-align: center;
+    width: 70%;
+    height: 100%;
+    margin-left: 12px;
+    font-size: 19px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.slider {
+    position: relative;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.slider .progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 5px;
+    background: #27d6f1;
+}
+
+.range-input{
+    position: relative;
+}
+
+.range-input input {
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    width: 100%;
+    height: 5px;
+    appearance: none;
+    pointer-events: none;
+    background: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    appearance: none;
+    pointer-events: auto;
+    background: #27d6f1; 
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+section {
+    margin-top: 0;
+}
+
+.error-message {
+    text-align: center;
+    margin: 30px 0 0;
+    padding-bottom: 400px;
+    font-size: 25px;
+}
+
+.error-message-login {
+    padding: 0;
+    font-size: 16px;
+}

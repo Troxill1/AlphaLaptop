@@ -1,0 +1,210 @@
+.error-message {
+    text-align: center;
+    padding-bottom: 55vh;
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header {
+    margin-left: 100px;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+.container img {
+    width: 500px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 335px;
+    margin-right: 100px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.actions button, .actions a {
+    display: inline-flex;
+    width: 80%;
+    height: 60px;
+    margin-top: 10px;
+    align-items: center;
+    border: none;
+    border-radius: 7px;
+    font-size: 28px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1bede9;
+    cursor: pointer;
+}
+
+.actions a {
+    margin-left: 10%;
+}
+
+.actions a:hover {
+    background-color: #03cfcb;
+}
+
+.actions i {
+    float: left;
+    margin-left: 10px;
+    margin-right: 5%;
+    font-size: 40px;
+}
+
+#error-message-description {
+    color: #f00;
+    font-weight: bold;
+}
+
+.price {
+    color: #f00;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.specifications {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.specifications table {
+    width: calc(100vw - 200px);
+}
+
+.specifications table tr:nth-child(odd) {
+    background-color: #04AA6D;
+    color: #fff;
+}
+
+.specifications table tr td:nth-child(odd) {
+    width: 8%;
+    text-align: center;
+}
+
+.specifications table tr td:nth-child(even) {
+    padding-left: 20px;
+}
+
+#comments-header {
+    margin: 100px 0 0 100px;
+}
+
+.comment {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 40px 0 0 100px;
+}
+
+.comment img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 50px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.comment p {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.comment i {
+    position: relative;
+    font-size: 20px;
+    color:rgb(255, 162, 0);
+}
+
+.comment button {
+    position: absolute;
+    right: 0;
+    margin-right: 85px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f00;
+    cursor: pointer;
+}
+
+.comment-content {
+    margin-left: 100px;
+    width: calc(100vw - 220px);
+    height: 100px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+p.no-comments {
+    margin: 20px 0 0 100px;
+    font-size: 19px;
+}
+
+.write-comment {
+    width: calc(100vw - 200px);
+    margin: 50px 0 130px 100px;
+}
+
+.write-comment p {
+    color: #f00;
+}
+
+.write-comment textarea {
+    width: calc(100vw - 220px);
+    height: 70px;
+    padding: 10px;
+    resize: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Arial, sans-serif
+}
+
+.write-comment i {
+    display: inline-flex;
+    margin-top: 10px;
+    font-size: 30px;
+    color:rgb(255, 162, 0);
+    cursor: pointer;
+}
+
+.write-comment button {
+    float: right;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 130px;
+    margin-top: 10px;
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    background-color: #04AA6D;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+}
+
+.write-comment button:hover {
+    background-color: #03cf84;
+    transition: background-color 0.3s ease;
+}

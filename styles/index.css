@@ -1,0 +1,126 @@
+body, html {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  margin-bottom: 300px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 100px 0 150px;
+  background-image: url(../images/carousel-background.jpg);
+}
+
+.slide {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slide img {
+  height: 350px;
+  width: auto;  
+}
+
+.section-header { 
+  position: absolute;
+  margin-left: calc(7% + 25px);
+  margin-right: 8%;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 8% 60px 7%;
+}
+
+.product {
+  position: relative;
+  margin: 90px 0 0 20px;
+  padding: 25px 30px 155px 30px;
+  height: 200px;
+  width: 200px;
+  border-radius: 25px;
+  background-color: #ddd;
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+  width: 200px;
+  height: 150px;
+}
+
+.product p:not(.price, .error-message), .product h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+}
+
+.price {
+  text-align: left;
+  color: #F00;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product:hover {
+  background-color: #ababab;
+}
+
+.product-link {
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 30px;
+  position: absolute;
+  bottom: 10px;
+  margin-right: 10px;
+  border-style: hidden;
+  transition: font-size 0.3s ease;
+}
+
+.heart {
+  right: 10px;
+  background-color: inherit;
+  color: #fff;
+}
+
+.heart:hover {
+  color: #f00;
+  font-size: 36px;
+}
+
+.cart {  
+  right: 50px;
+  background: linear-gradient(#327df5, #f280ea);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cart:hover {
+  font-size: 36px;
+}
+
+.error-message {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #f00;
+}
+
+.no-products-message {
+  margin: 80px 0 0 30px;
+  color: #f00;
+  font-weight: bold;
+}

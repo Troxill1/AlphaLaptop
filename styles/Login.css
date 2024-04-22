@@ -1,0 +1,128 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 20px;
+    border-style: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+button {
+    width: 80%;
+    height: 35px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(4, 147, 104);
+    color: rgb(255, 255, 255);
+    border-style: hidden;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(4, 178, 126);
+}
+
+label {
+    margin-top: 20px;
+}
+
+input {
+    width: 77%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+}
+
+#flex-div {
+    display: flex;
+    align-items: center;
+    width: 92%;
+}
+
+#flex-div input {
+    margin: 20px 5px 0 13px;
+    width: 55px;
+}
+
+#flex-div div {
+    margin-top: 20px;
+}
+
+.form label, .form h1, .form p {
+    color: #fff;
+}
+
+#error-message {
+    color: #f00;
+    font-weight: bold;
+    text-align: center;
+}
+
+a {
+    color: rgb(54, 105, 149);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(69, 134, 192);
+}
+
+#policy-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 80%;
+    overflow: auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #000;
+    border-radius: 5px;
+}
+
+#policy-popup h1 {
+    text-align: center;
+}
+
+#policy-popup p {
+    margin-bottom: 15px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: #666;
+    cursor: pointer;
+}

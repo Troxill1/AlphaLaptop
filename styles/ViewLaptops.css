@@ -1,0 +1,180 @@
+body, html {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+  
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 130px;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+  border-radius: 20px;
+  border-style: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%;
+  align-items: center;
+}
+
+.section-alone {
+  width: 100%;
+}
+
+.form {
+  margin-top: 100px;
+}
+
+.form button {
+  width: 23%; /* 200px */
+  height: 35px;
+  margin-top: 50px;
+  background-color: rgb(4, 147, 104);
+  color: rgb(255, 255, 255);
+  border-style: hidden;
+  border-radius: 7px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: rgb(7, 182, 130);
+}
+
+input:not(.search-box input), select {
+  width: 68%;
+  height: 30px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  outline: none;
+}
+
+select {
+  width: 71%;
+  height: 35px;
+  border-width: 2px;
+  border-top-color: #333;
+  border-left-color: #333;
+}
+
+#image-upload {
+  color: #fff;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+  
+h2 {
+  margin-top: 120px;
+}
+
+table {
+  border-radius: 10px;
+  background-color: #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+tr {
+  height: 50px;
+}
+
+td {
+  font-size: 17px;
+  padding: 10px;
+}
+
+.delete-form {
+  display: inline;
+}
+
+.edit-form {
+  display: none;
+}
+
+.edit-form input {
+  margin: 0 !important;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.edit-form input[name="subcategory"] {
+  width: 75px;
+}
+
+.edit-form input[name="brand"] {
+  width: 65px;
+}
+
+.edit-form input[name="model"] {
+  width: 120px;
+}
+
+.edit-form input[name="gpu"] {
+  width: 140px;
+}
+
+.edit-form input[name="cpu"] {
+  width: 155px;
+}
+
+.edit-form input[name="ram"] {
+  width: 130px;
+}
+
+.edit-form input[name="storage"] {
+  width: 40px;
+}
+
+.edit-form input[name="screen-size"] {
+  width: 40px;
+}
+
+.edit-form input[name="price"] {
+  width: 45px;
+}
+
+.crud-btn {
+  background-color: rgb(243, 174, 26);
+  color: rgb(255, 255, 255);
+  border-style: hidden;
+  border-radius: 7px;
+  font-size: 18px;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: rgb(219, 7, 7);
+}
+
+.save {
+  background-color: rgb(4, 147, 104);
+}
+
+.delete:hover {
+  background-color: rgb(254, 2, 2);
+}
+
+.save:hover {
+  background-color: rgb(7, 182, 130);
+}
+
+.edit:hover, .cancel:hover {
+  background-color: rgb(255, 195, 65);
+}
