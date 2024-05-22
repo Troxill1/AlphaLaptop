@@ -9,6 +9,8 @@
     $zip = $_POST['zip'];
     $payment = $_POST['payment'];
 
+    $email = $_SESSION['email'];
+
     $getCart = "SELECT * FROM cart WHERE user_id = '$userId'";
     $cart = $mysqli->query($getCart);
 
@@ -26,6 +28,15 @@
         (user_id, user_full_name, city, address, zip_code, description, payment_method)
         VALUES ('$userId', '$fullname', '$city', '$address', '$zip', '$description', '$payment')";
     $mysqli->query($createOrder);
+
+    $to = $email;
+    $subject = "From Alpha Laptop";
+    $body = "Пратка:\n$description\n\nАдрес на доставка:\nгр./с. $city, $address, $zip";
+    $body .= "\n\nНачин на плащане:\n$payment";
+    $headers = "From: alpha.laptop.info@gmail.com\r\n";
+    $headers .= "Content-type: text/plain; charset=utf-8\r\n";
+    
+    mail($to, $subject, $body, $headers);
 
     if ($payment == 'Наложен платеж') {
         include('EmptyCart.php');
