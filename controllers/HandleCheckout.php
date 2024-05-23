@@ -21,7 +21,7 @@
         $result = $mysqli->query($getProduct);
         $product = $result->fetch_assoc();
 
-        $description .= $product['brand'] . ' ' . $product['model'] . ' Брой: ' . $row['quantity'] . '\n';
+        $description .= $product['brand'] . ' ' . $product['model'] . ' Брой: ' . $row['quantity'] . ';\n';
     }
 
     $createOrder = "INSERT INTO orders

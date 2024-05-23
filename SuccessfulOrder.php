@@ -1,7 +1,6 @@
 <?php
     include("./controllers/EmptyCart.php");
     include('DisplayHeaderFooter.php');
-    session_start();
 ?>
 
 <!DOCTYPE html>

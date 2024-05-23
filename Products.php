@@ -82,7 +82,8 @@
 
                 if (isset($_SESSION['user_id'])) {
                     echo
-                    '<li class="float-right"><a href="Favourites.php"><i class="fas fa-heart"></i></a></li>
+                    '<li class="float-right"><a href="Orders.php"><i class="fas fa-truck"></i></a></li>
+                    <li><a href="Favourites.php"><i class="fas fa-heart"></i></a></li>
                     <li><a href="Cart.php"><i class="fas fa-shopping-cart"></i></a></li>
                     <li><a href="Profile.php">' . $_SESSION['username'] . '</a></li>
                     <li><a href="./controllers/EndSession.php">Изход</a></li>';

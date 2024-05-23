@@ -1,0 +1,40 @@
+.header {
+    margin: 100px 0;
+    text-align: center;
+}   
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.order {
+    margin: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.order h3 {
+    text-align: center;
+}
+
+.order button {
+    padding: 5px 12px;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 5px;
+}
+
+.order button:hover {
+    background-color: #03cf85;
+}
+
+.no-products-message {
+    margin: -70px 0 300px;
+    color: #f00;
+    font-weight: bold;
+}
