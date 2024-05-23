@@ -45,6 +45,7 @@
                                     <li><a href="ViewLaptops.php">Преглед Лаптопи</a></li>
                                     <li><a href="ViewAccessories.php">Преглед Аксесоари</a></li>
                                     <li><a href="ViewAccounts.php">Преглед Акаунти</a></li>
+                                    <li><a href="ViewOrders.php">Преглед Поръчки</a></li>
                                 </ul>
                             </div>
                         </li>';
